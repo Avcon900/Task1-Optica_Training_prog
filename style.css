@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF5E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Calendar{
+    height: 52rem;
+    background-color: #ffffff;
+    width: 45rem;
+    border-radius: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+.Header{
+    width: 100%;
+    height: 12rem;
+    background-color: #FC8E56;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: large;
+    border-radius: 1rem 1rem 0 0;
+}
+.Header i{
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+.Weekdays{
+    width: 200%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    color: #FC8E56;
+}
+
+.Weekdays div{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.days div{
+    font-size: 14px;
+    margin: 3px;
+    width: calc(40.4rem/7);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-date , .next-date{
+    opacity: 0.5;
+    background-color: #EEEEEE;
+    padding: 0;
+    margin: 0;
+}
+
+.days div:hover:not(.today){
+    cursor: pointer;
+}
